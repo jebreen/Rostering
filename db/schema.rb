@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_09_09_111823) do
+ActiveRecord::Schema[7.0].define(version: 2024_09_09_122325) do
   create_table "allocations", force: :cascade do |t|
     t.integer "shift_id", null: false
     t.integer "staff_id", null: false
@@ -36,7 +36,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_09_111823) do
   end
 
   create_table "staffs", force: :cascade do |t|
-    t.integer "staff_id"
     t.string "first_name"
     t.string "last_name"
     t.datetime "created_at", null: false
