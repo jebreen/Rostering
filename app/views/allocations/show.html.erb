@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @allocation %>
+
+<div>
+  <%= link_to "Edit this allocation", edit_allocation_path(@allocation) %> |
+  <%= link_to "Back to allocations", allocations_path %>
+
+  <%= button_to "Destroy this allocation", @allocation, method: :delete %>
+</div>

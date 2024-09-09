@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Allocations</h1>
+
+<div id="allocations">
+  <% @allocations.each do |allocation| %>
+    <%= render allocation %>
+    <p>
+      <%= link_to "Show this allocation", allocation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New allocation", new_allocation_path %>
